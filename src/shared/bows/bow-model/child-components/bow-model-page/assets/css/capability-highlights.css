@@ -1,0 +1,33 @@
+#capability-highlights ul {
+  border-bottom: 1px solid #cccccc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+#capability-highlights ul li {
+    padding: 0 1rem;
+}
+
+#capability-highlights ul li.active {
+  border-bottom: 3px solid;
+  font-weight: 600;
+}
+
+#capability-highlights figure {
+  margin: 1rem auto;
+  width: 75%;
+}
+
+#capability-highlights p {
+  margin: 1rem auto;
+  text-align: center;
+  width: 85%;
+}
+
+
+@media screen and (min-width: 769px) {
+  #capability-highlights p {
+    font-size: 160%;
+  }
+}

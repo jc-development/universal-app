@@ -1,0 +1,40 @@
+.bow-model-pattern-img {
+  /* position: absolute; */
+  /* left: 3rem; */
+  /* bottom: 3rem; */
+  /* width: 5rem; */
+  height: 11rem;
+  width: auto;
+}
+
+.active-thumb {
+  border: blue solid 3px;
+  padding: 1rem;
+}
+
+
+/***** Mobile *****/
+#hi-res-thumbs-container-mobile {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+#hi-res-thumbs-container-mobile.mobile-thumbs {
+  opacity: 1;
+  visibility: visible;
+  z-index: 6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% - 2rem);
+  background: #fff;
+  margin: 0;
+  padding: 1rem;
+}
+
+#independent-builder-grid #hi-res-thumbs-container.images-open {
+  z-index: 5;
+  overflow: initial;
+  height: auto;
+}

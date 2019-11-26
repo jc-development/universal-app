@@ -1,0 +1,39 @@
+.product-recommendations {
+  margin-top: 2rem;
+}
+
+.product-recommendations h4 {
+  margin-bottom: 0rem;
+  font-size: 2rem;
+}
+
+.product-recommendations ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.product-recommendations ul li {
+  padding: 1rem;
+  width: calc(50% - 2rem)
+}
+
+.product-recommendations ul li div.image-container {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-recommendations ul li div.image-container img {
+  max-height: 9rem;
+  width: auto;
+  max-width: 100%;
+}
+
+.product-recommendations ul li p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 95%;
+}

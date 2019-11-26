@@ -1,0 +1,26 @@
+.hat-selection-element {
+  /* float: left; */
+  padding: 1rem 0;
+  width: 50%;
+}
+
+.hat-selection-element img {
+  width: 25%;
+}
+
+.hat-selection-element h5 {
+  font-size: 100%;
+  margin: 0.5rem 0;
+}
+
+.hat-selection-element button {
+  font-size: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  font-weight: 900;
+  margin-top: 0;
+}

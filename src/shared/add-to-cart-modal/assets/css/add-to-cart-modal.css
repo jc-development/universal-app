@@ -1,0 +1,171 @@
+/******* ADD TO CART MODAL POPUP **********/
+.hidden-modal {
+  display: none;
+  position: fixed;
+  background: rgba(200,200,200,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20000;
+}
+
+/* .hidden-modal > .notify {
+  background: #FFF;
+  padding: 2rem;
+  max-width: 375px; 
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  overflow-y: scroll;
+}
+
+.hidden-modal > .notify > img {
+  max-width: 150px;
+  margin: 0 auto;
+  max-height: 150px;
+  width: auto;
+}
+
+.hidden-modal > .notify > button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hidden-modal > .notify > a {
+  color: #fff;
+  width: 96%;
+}
+
+.hidden-modal > .notify > a:hover, .hidden-modal > .notify > a:focus {
+  color: #FFF;
+  text-decoration: none;
+} */
+
+#bow-accessories {
+  border-top: 1px solid #ccc;
+  margin: 4rem auto;
+  padding: 1rem 0;
+  overflow-y: scroll;
+  height: 40vh;
+}
+
+#bow-accessories p {
+  text-align: left;
+  padding: 1.5rem 0;
+}
+
+.shirt {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 1rem;
+  color: #000;
+  padding: 1rem;
+}
+
+.shirt img {
+  width: 50%;
+}
+
+.hidden-modal .notify a.shirt-link {
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 450px) {
+  .hidden-modal > .notify {
+    max-width: 80%;
+  }
+}
+
+/********* NEW CSS - JUNE 3, 2019 *********/
+.hidden-modal > .notify {
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  display: flex;
+  max-width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: auto;
+  background: #FFF;
+}
+
+.hidden-modal > .notify > .continue {
+  max-width: 375px;
+  width: 100%;
+  margin: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.hidden-modal > .notify > .continue > img {
+  max-width: 200px;
+  margin: 0 auto;
+  max-height: 200px;
+  width: auto;
+}
+
+.hidden-modal > .notify > .continue > button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hidden-modal > .notify > .continue > a {
+  color: #fff;
+  width: calc(96% - 3rem);
+}
+
+.hidden-modal > .notify > a:hover, .hidden-modal > .notify > a:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.hidden-modal > .notify > .upsell {
+  width: calc(100% - 375px);
+  border-left: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  overflow-y: auto;
+}
+
+.hidden-modal > .notify > .close-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.35rem .5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .hidden-modal > .notify {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hidden-modal > .notify {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .hidden-modal > .notify > .upsell {
+    border-left: none;
+    border-top: 1px solid #ccc;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    width: calc(100% - 2rem);
+    overflow-y: unset;
+  }
+}

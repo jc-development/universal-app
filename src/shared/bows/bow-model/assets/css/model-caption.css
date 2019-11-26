@@ -1,0 +1,11 @@
+.model-sub-header {
+  margin: 4rem auto;
+  width: 72%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .model-sub-header {
+    width: 95%;
+  }
+}

@@ -1,0 +1,94 @@
+.bow-model-buttons {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+
+.bow-model-buttons p {
+  font-weight: 400;
+  font-size: 130%;
+}
+
+.bow-series-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.bow-series-buttons li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* .bow-series-buttons li figure {
+  max-height: 50vh;
+} */
+
+.bow-series-buttons li img {
+  height: 24vw;
+  width: auto;
+}
+
+.bow-series-buttons li dl {
+  text-align:left;
+}
+
+.bow-series-buttons li div dl dt {
+  font-size: 170%;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 900;
+}
+
+.bow-series-buttons li div dl dd span {
+  font-weight: 900;
+}
+
+
+.bow-series-buttons li div button {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  background: #337ab7;
+  border: none;
+  color: #ffffff;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .bow-series-buttons li div dl {
+    margin: 0.5rem;
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bow-series-buttons {
+    margin: 0 0 0 1rem;
+  }
+
+  .bow-model-buttons p span {
+    display: block
+  }
+
+  .bow-series-buttons li {
+    text-align: left;
+  }
+
+  .bow-series-buttons li img {
+    height: 30vw;
+    
+  }
+  .bow-series-buttons li div dl {
+    display: none;
+  }
+  .bow-series-buttons li div button {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+}

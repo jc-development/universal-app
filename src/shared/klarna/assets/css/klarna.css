@@ -1,0 +1,129 @@
+.klarna-heading-wrapper {
+  margin: 0 0 1rem 0;
+  border-top: 1px solid;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid;
+}
+
+.klarna-heading-wrapper #klarna-upstream-text{
+  font-size: 1.3rem !important;
+}
+
+.klarna-heading-wrapper p {
+  margin: 0.2rem 0 0 0;
+}
+
+/** bow model for bows list index **/
+.bow-model-link .klarna-heading-wrapper {
+  border-color: #ccc;
+}
+
+.bow-model-link .klarna-heading-wrapper #klarna-upstream-text {
+  font-size: 1rem !important;
+}
+
+.bow-model-link .klarna-heading-wrapper p {
+  color: #000;
+  font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  .klarna-heading-wrapper {
+    margin: 2rem 0;
+  }
+
+  .klarna-heading-wrapper #klarna-upstream-text{
+    font-size: 1.5rem !important;
+  }
+
+  .klarna-heading-wrapper p {
+    font-size: 1rem !important;
+  }
+
+  .bow-model-link .klarna-heading-wrapper {
+    margin: 0;
+  }
+}
+
+/****** END NEW KLARNA CSS ********/
+
+article.enlist .klarna-upstream a {
+  color: #fff !important;
+}
+
+.klarna-cart {
+  margin: 0 0 1rem 0;
+}
+
+.klarna-wrapper {
+  margin: 0 0 1rem 0;
+}
+
+
+
+/******* Ritual Homepage *********/
+article.ritual > h5 {
+  margin-top: 0;
+  padding: 1rem;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 1px 4px 17px #000;
+}
+
+article.ritual > h5 #klarna-upstream-text {
+  font-size: 2rem !important;
+}
+
+article.ritual > h5 #klarna-upstream-learnmore {
+  font-size: 1.5rem !important;
+}
+
+article.ritual > h5 #klarna-upstream-logo > img {
+  width: 75px !important;
+  margin-bottom: -1px !important;
+  margin-left: 4px !important;
+  margin-right: 5px !important;
+  vertical-align: baseline !important;
+}
+
+@media screen and (max-width: 500px) {
+  article.ritual > h5 #klarna-upstream-learnmore {
+    display: block;
+  }
+}
+
+#bows-list-page .bow-list-row div .klarna-heading-wrapper {
+  width: 80%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+#bows-list-page .bow-list-row div .klarna-heading-wrapper #klarna-upstream-text {
+    font-size: 1.6rem!important;
+}
+
+#bows-list-page .bow-list-row div .klarna-heading-wrapper > p {
+  color: #000;
+  font-size: 1.4rem!important;
+}
+
+#bows-list-page .bow-list-row div .klarna-heading-wrapper #klarna-upstream-logo > img {
+  width: 52px!important;
+  margin-bottom: -1px!important;
+  margin-left: 1px!important;
+  vertical-align: baseline!important;
+  line-height: 0.5!important;
+}
+
+
+@media screen and (max-width: 1300px) {
+  #bows-list-page .bow-list-row div .klarna-heading-wrapper, #bows-list-page .bow-list-row div h5 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #bows-list-page .bow-list-row div .klarna-heading-wrapper, #bows-list-page .bow-list-row div h5 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,85 @@
+.promo-bow {
+  color: #645b52;
+  display: grid;
+  font-family: sans-serif;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 0;
+  justify-items: center;
+}
+
+.promo-bow div.left-side {
+  align-self: center;
+  justify-self: end;
+  order: 1;
+}
+
+.promo-bow div.left-side div {
+  margin: 1rem 0;
+}
+
+.promo-bow div.left-side h6 span {
+  position: relative;
+}
+
+.promo-bow div.left-side h6 span::before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  background: #337ab7;
+}
+
+.promo-bow div.left-side div a {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+.promo-bow div.left-side div a:hover {
+  text-decoration: none;
+}
+
+.promo-bow div.left-side div a button {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  background: #337ab7;
+  border: none;
+  color: #ffffff;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.promo-bow div.left-side #ritual-35 #klarna-upstream-text {
+  color: #645b52 !important;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-bow svg#ritual-35-bow-shadow {
+  order: 2;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .promo-bow {
+    display: block;
+  }
+
+  .promo-bow div.left-side {
+    order: 2;
+  }
+
+  .promo-bow div.left-side h6 {
+    margin-top: 1rem;
+    font-size: 250%;
+  }
+
+  .promo-bow svg#ritual-35-bow-shadow {
+    order: 1;
+  }
+
+}

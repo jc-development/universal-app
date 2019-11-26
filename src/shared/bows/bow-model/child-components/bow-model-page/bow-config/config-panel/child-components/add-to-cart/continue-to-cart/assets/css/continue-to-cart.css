@@ -1,0 +1,34 @@
+.continue-to-cart {
+  text-align: center;
+}
+
+.continue-to-cart > h5 {
+  text-align: left;
+}
+
+.continue-to-cart .dealer {
+  margin: 1rem;
+}
+
+.continue-to-cart .dealer .dealer-name {
+  font-weight: bold;
+}
+
+.continue-to-cart .buttons-wrapper {
+  margin: 1rem;
+}
+
+.continue-to-cart .buttons-wrapper button {
+  margin: 0.5rem 1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .continue-to-cart .buttons-wrapper button {
+    padding: 1rem;
+  }
+}

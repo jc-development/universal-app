@@ -1,0 +1,73 @@
+.home-hero-video-text header p {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.home-hero-video form {
+  background: rgba(0, 0, 0, .5);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 50%;
+  grid-gap: 1rem;
+  /* border: 1px solid #fff; */
+  padding: 2rem;
+  position: absolute;
+  color: #fff;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  z-index: 2;
+  font-family: sans-serif;
+}
+
+.home-hero-video form h3 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.home-hero-video form label {
+  display: block;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.home-hero-video form .form-right-side {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: left;
+}
+
+.home-hero-video form .form-right-side .form-group {
+  margin: 1rem 0;
+}
+
+
+.home-hero-video form .form-left-side {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: left;
+}
+
+/* .home-hero-video form .form-left-side section#find-a-dealer.width-85 {
+  width: 100%;
+}
+
+.home-hero-video form .form-left-side section#find-a-dealer.width-85 h1.center-content {
+  font-size: 2rem;
+}
+
+.home-hero-video form .form-left-side section#find-a-dealer.width-85 #find-a-dealer-map {
+  color: #000;
+  height: 27rem;
+}
+
+.home-hero-video form .form-left-side section#find-a-dealer.width-85 #find-a-dealer-map #search-box {
+  width: 85%;
+} */

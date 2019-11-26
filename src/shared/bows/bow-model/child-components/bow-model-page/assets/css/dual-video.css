@@ -1,0 +1,14 @@
+#dual-video {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#dual-video video {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #dual-video {
+    grid-template-columns: 100%;
+  }
+}

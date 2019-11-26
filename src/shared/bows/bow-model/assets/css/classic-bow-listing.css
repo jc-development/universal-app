@@ -1,0 +1,52 @@
+.classic-bow-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.classic-bow-listing {
+  margin: 2rem;
+}
+
+.classic-bow-listing > div:first-of-type {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+
+.classic-bow-listing > div:first-of-type > div > div {
+  margin: 1rem;
+}
+
+.classic-bow-listing > div:first-of-type > div > div.color {
+  display: grid;
+  grid-template-columns: 12% auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-items: center;
+}
+
+.classic-bow-listing > div > .buy-now, .classic-bow-listing > div > .add-to-cart, .classic-bow-listing > div > #select-bow-dealer .form-group  {
+  margin: 0 1rem;
+}
+
+.classic-bow-listing #select-bow-dealer h4  {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.classic-bow-listing #select-bow-dealer #search-address  {
+  width: calc(100% - 57px);
+}
+
+
+@media screen and (max-width: 768px) {
+  .classic-bow-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .classic-bow-listing h5 {
+    font-size: 1.25rem;
+  }
+
+}

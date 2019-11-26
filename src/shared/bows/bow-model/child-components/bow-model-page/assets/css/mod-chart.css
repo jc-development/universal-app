@@ -1,0 +1,56 @@
+#mod-chart {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: left;
+  /* border-bottom: 1px solid #ccc; */
+  padding: 1rem 0;
+}
+
+#mod-chart header h3 {
+  font-size: 200%;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  margin-left: 0;
+}
+
+#mod-chart table {
+  display: table-cell;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  justify-self: right;
+}
+
+#mod-chart table tr:nth-of-type(2n) {
+  background: #E6E6E6;
+}
+
+#mod-chart table thead {
+  background: #000;
+  color: #fff;
+}
+
+#mod-chart table th {
+  font-size: 100%;
+  padding: 1rem 0;
+}
+
+#mod-chart table td {
+  padding: 1rem 0;
+}
+
+#mod-chart table tfoot {
+  border-top: 1px solid;
+  font-size: 80%;
+  color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  #mod-chart {
+    grid-template-columns: 30% 70%;
+    align-items: baseline;
+  }
+}

@@ -1,0 +1,26 @@
+#error-404 .links-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#error-404 .links-wrapper dl dt {
+  font-weight: bold;
+}
+
+#error-404 .tech-image {
+  border: 1px solid;
+}
+
+@media screen and (max-width: 767px) {
+  #error-404 .links-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  #error-404 .links-wrapper > div {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+}

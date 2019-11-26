@@ -1,0 +1,17 @@
+.slider-container {
+  position: relative;
+  height: 80vh;
+}
+
+.image-slider,
+.video-slider {
+  color: red;
+  font-size: 3rem;
+}
+
+.slider-control-panel {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  color: #000;
+}

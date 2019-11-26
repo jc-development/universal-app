@@ -1,0 +1,123 @@
+.promo-accessory {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 47rem;
+}
+
+.promo-accessory div:nth-of-type(1) {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  text-align: left;
+  text-transform: uppercase;
+  width: 40%;
+  z-index: 2;
+}
+
+.promo-accessory div:nth-of-type(1) header h6 {
+  font-size: 6vw;
+  margin-left: 0;
+}
+
+.promo-accessory div:nth-of-type(1) ul {
+  margin: 0;
+}
+
+.promo-accessory div:nth-of-type(1) ul li {
+  font-size: 2.5vw;
+  padding: 0.75vw 0;
+  list-style-type: none;
+}
+
+.promo-accessory div:nth-of-type(1) p {
+  font-size: 2vw;
+  padding-left: 0;
+}
+
+  .promo-accessory div:nth-of-type(1) p span {
+    font-size: 4vw;
+  }
+
+.promo-accessory div:nth-of-type(2) {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.promo-accessory div:nth-of-type(2) img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  filter: brightness(0.75);
+  transform-origin: center center;
+}
+
+.promo-accessory button {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  background: #337ab7;
+  border: none;
+  color: #ffffff;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1145px) {
+  .promo-accessory div:nth-of-type(1) {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 793px) {
+  .promo-accessory div:nth-of-type(1) {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 592px) {
+  .promo-accessory div:nth-of-type(1) {
+    left: 30%;
+    width: 80%;
+    top: 25%;
+  }
+
+  .promo-accessory div:nth-of-type(2) img {
+    filter: brightness(0.5) !important;
+  }
+}
+
+
+/* phones */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+@media only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: portrait) {
+
+  .promo-accessory div:nth-of-type(1) ul li {
+    font-size: 4.5vw;
+    padding: 1.5vw 0;
+  }
+
+  .promo-accessory div:nth-of-type(1) p {
+    font-size: 4vw;
+  }
+
+  .promo-accessory div:nth-of-type(1) p span {
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+@media only screen and (-webkit-min-device-pixel-ratio: 4) {
+  .promo-accessory div:nth-of-type(2) img {
+    filter: brightness(0.5) !important;
+  }
+}

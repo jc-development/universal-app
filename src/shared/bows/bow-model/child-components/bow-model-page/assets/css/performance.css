@@ -1,0 +1,99 @@
+#bow-performance {
+  padding: 1rem 0;
+}
+
+#bow-performance article {
+  margin: 4rem auto;
+  width: 85%;
+}
+
+#bow-performance article header h2 {
+  font-size: 200%;
+}
+
+#bow-performance article ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 1rem auto;
+  /* width: 85%; */
+}
+
+#bow-performance article ul li {
+  font-size: 130%;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  line-height: 280%;
+}
+
+#bow-performance article ul li span {
+  display: block;
+  font-size: 400%;
+}
+
+#bow-performance article figure {
+  position: relative;
+}
+
+#bow-performance article figure figcaption {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 120%;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+
+@media screen and (max-width: 1155px) {
+  #bow-performance article ul.specs li {
+    font-size: 110%;
+    line-height: 240%;
+  }
+
+  #bow-performance article ul.specs li span {
+    font-size: 350%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #bow-performance article ul.specs {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  #bow-performance article ul.specs li {
+    min-width: 62%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #bow-performance article {
+    margin: 3rem 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #bow-performance article ul.specs li {
+    min-width: 85%;
+    font-size: 90%;
+  }
+  #bow-performance article ul.specs li span {
+    font-size: 300%;
+  }
+  #bow-performance article ul li {
+    font-size: 120%;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  #bow-performance article p {
+    font-size: 160%;
+  }
+}

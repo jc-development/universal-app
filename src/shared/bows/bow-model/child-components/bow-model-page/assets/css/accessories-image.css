@@ -1,0 +1,15 @@
+#accessories-image article header {
+  margin: 4rem auto;
+  width: 85%;
+}
+
+#accessories-image article header h2 {
+  font-size: 200%;
+}
+
+@media screen and (max-width: 767px) {
+  #accessories-image article header {
+    margin: 3rem 1rem;
+    width: calc(100% - 2rem);
+  }
+}

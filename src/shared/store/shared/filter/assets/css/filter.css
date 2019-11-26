@@ -1,0 +1,27 @@
+.filter-menu {
+  border-right: 1px solid #ccc;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 25%; /* temp for demo */
+}
+.filter-menu img {
+  height: auto;
+  margin: 0 1rem;
+  width: 25%;
+}
+
+.filter-menu dl dt {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.filter-menu dl dd {
+  padding-left: 1rem;
+}
+
+.filter-menu p {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}

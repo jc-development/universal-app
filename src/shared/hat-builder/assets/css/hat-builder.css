@@ -1,0 +1,37 @@
+#hat-builder {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#hat-builder a header {
+  position: absolute;
+  top: 1vh;
+  right: 0;
+  text-align: right;
+  width: 50%;
+  z-index: 2;
+}
+
+
+#hat-builder a header h2 {
+  font-size: 5vw;
+  text-decoration: none;
+  color: #fff;
+}
+
+#hat-builder #step-icons {
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  right: 0;
+  top: 1vh;
+}
+
+
+#hat-builder #current-patch-img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}

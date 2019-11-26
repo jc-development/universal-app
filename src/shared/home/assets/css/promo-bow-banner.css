@@ -1,0 +1,42 @@
+img.promo-bow-banner {
+  object-fit: cover !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+.camo-promo {
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.camo-promo h3,
+.camo-promo h4 {
+  text-align: center;
+}
+
+.camo-promo p {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.camo-promo p:last-child {
+  opacity: 0.7;
+}
+
+.camo-promo a:hover {
+  text-decoration: none;
+}
+
+.camo-promo button {
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 5px solid;
+  padding: 1rem;
+}

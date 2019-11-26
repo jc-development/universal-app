@@ -1,0 +1,119 @@
+#shootability-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%!important;
+  z-index: 400;
+  float: none!important;
+  margin-left: auto;
+  margin-right: auto;
+  background: hsla(0,0%,98%,.5);
+  border-radius: 2px;
+  transition: opacity .5s;
+  height: 100vh;
+  cursor: not-allowed;
+}
+
+.shootability-modal {
+  width: 80%;
+  background: #fff;
+  margin: 2% auto 0;
+  padding: 2rem;
+  box-shadow: 0 0 3px 2px #555;
+  cursor: default;
+  transition: all .5s;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.shootability-modal h1 {
+  font-size: 3rem !important;
+}
+
+.shootability-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.shootability-modal h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.shootability-content h3, .shootability-content h4 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.shootability-content ol {
+  list-style: decimal;
+}
+
+.shootability-content .dealers-wrapper {
+  min-height: 16rem;
+  max-height: 16rem;
+}
+
+.shootability-content .dealer-list-header h5 {
+  font-size: 1.5rem;
+}
+
+.shootability-content #select-bow-dealer #search-address {
+  width: 87%;
+}
+
+.shootability-content #select-bow-dealer #dealer-list {
+  height: 100%;
+  max-height: 13.4rem;
+}
+
+.shootability-buttons {
+  text-align: right;
+}
+
+.shootability-buttons button:first-of-type {
+  margin-right:1rem;
+}
+
+
+@media screen and (max-width: 1165px) {
+  .shootability-content #select-bow-dealer #search-address {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .shootability-modal {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .shootability-content {
+    display: block;
+  }
+
+  .shootability-content .dealers-wrapper {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #shootability-wrapper {
+    top:6rem;
+  }
+  .shootability-modal {
+    max-height: 76vh;
+    padding: 1rem;
+    margin: 0 auto 0;
+  }
+}
+
+
+#inactive-alert {
+    background-color: #ccc !important;
+}

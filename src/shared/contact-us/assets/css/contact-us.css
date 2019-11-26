@@ -1,0 +1,23 @@
+#contact-us address {
+  font-style: normal;
+}
+
+#contact-us dl dt {
+  font-weight: bold;
+}
+
+#contact-us .phone-number {
+  margin: 0;
+}
+
+#contact-us .phone-number:last-of-type {
+  margin-bottom: 1rem;
+}
+
+#contact-us .phone-number  dt {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+#contact-us .phone-number  dd {
+  display: inline-block;
+}

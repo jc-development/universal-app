@@ -1,0 +1,118 @@
+.store-help {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  padding: 0.5rem;
+}
+
+.store-help h3 {
+  font-size: 1.7rem;
+}
+.store-help p {
+  font-size: 1.3rem;
+}
+
+/***** END REFACTORED FOR NEW ARCHITECTURE ********/
+
+
+.store-layout .hero-shot-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.store-layout .hero-shot-wrapper .call-out {
+  position: absolute;
+  /*left: 80%;
+  top: 50%;
+  transform: translate(-80%, -50%);*/
+  text-align: center;
+  width: 28rem;
+  right: 15%;
+  top: 25%;
+}
+
+
+.hero-shot-section .black-back-white-letters {
+  text-align: center;
+  width: 100%
+}
+
+.store-layout .hero-shot-wrapper .call-out .list-inline li img {
+  margin-top: .5rem;
+  border: 1px solid #000;
+}
+
+div.category {
+  border: 1px solid #ccc;
+}
+
+/* .store-nav-menu {
+  background: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 14rem;
+  left: 7rem;
+  width: 20%;
+  z-index: 1;
+}
+
+.accessory-nav, .apparel-nav {
+  padding-left: 0 !important;
+}
+
+.accessory-nav-btns > li, .apparel-nav-btns > li {
+  padding: 0.5rem;
+} */
+
+
+/* @media screen and (max-width: 1200px) {
+  .store-layout .hero-shot-wrapper .call-out {
+    right: 5%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .call-out h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .store-layout .hero-shot-wrapper .call-out {
+    top: 1%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accessory-featured-wrapper, .apparel-featured-wrapper {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .accessory-featured-wrapper .list-inline > li, .apparel-featured-wrapper .list-inline > li{
+    width: 60%;
+    white-space: normal;
+    vertical-align: top;
+  }
+
+  .store-layout .hero-shot-wrapper .call-out {
+    top: 1%;
+    width: 20rem;
+  }
+
+  .store-layout .hero-shot-wrapper {
+    min-height: 30rem;
+    max-height: 30rem;
+  }
+
+  .store-layout .hero-shot-wrapper > img {
+    height: 100%;
+    width: auto;
+  }
+
+  .store-layout .hero-shot-wrapper > * > * >>.btn {
+    padding: 0.5rem !important;
+  }
+} */

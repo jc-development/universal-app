@@ -1,0 +1,70 @@
+#bow-specs {
+  border-bottom: 1px solid #666;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.spec-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.spec-layout .spec-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 33.3333%;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.spec-layout .spec-wrapper h6 {
+  margin: 0 0 1rem 0;
+  flex-basis: 100%;
+}
+
+.spec-layout .spec-wrapper label > input[type="radio"] {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.spec-layout .spec-wrapper label {
+  margin: 0 0 0.5rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  min-width: 4.25rem;
+  min-height: 2.5rem;
+  border: 1px solid;
+  text-align: center;
+  font-weight: normal;
+  display: inline-grid;
+  align-items: center;
+  justify-content: space-around;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .spec-layout {
+    flex-wrap: wrap;
+  }
+
+  .spec-layout .spec-wrapper {
+    flex: 0 1 100%;
+  }
+
+  .spec-layout .spec-wrapper h6 {
+    font-size: 160%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .spec-layout .spec-wrapper:first-of-type {
+    padding: 0 0 1rem 1rem;
+  }
+  .spec-layout .spec-wrapper {
+    padding: 1rem 0 1rem 1rem;
+  }
+}

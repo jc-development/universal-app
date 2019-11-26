@@ -1,0 +1,135 @@
+
+#main-footer {
+  border-top: 1px solid #999;
+  background-color: #efefef;
+
+  position: relative;
+
+}
+
+#main-footer .website-links-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#main-footer .website-links-wrapper dl {
+  margin: 0;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+#main-footer .website-links-wrapper dl dt {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+
+#main-footer .website-links-wrapper dl dd {
+  padding-bottom: 0.5rem;
+}
+
+#main-footer .website-links-wrapper dl dd a {
+  text-decoration: none;
+  color: #337ab7;
+  text-transform: uppercase;
+}
+
+#main-footer .website-links-wrapper dl dd a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+#main-footer .partners-links-wrapper {
+  background: #000;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#main-footer .partners-links-wrapper ul {
+  margin: 0;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+#main-footer .partners-links-wrapper  ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+#main-footer .partners-links-wrapper  ul li {
+  padding: 2rem;
+}
+
+#main-footer .partners-links-wrapper ul li a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+#main-footer .partners-links-wrapper ul li a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.tall-icon {
+  margin-top: -1rem;
+}
+
+#main-footer .copyright {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  background-color: #000;
+}
+
+#main-footer .copyright p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+#main-footer .copyright img {
+  width: 6rem;
+}
+
+@media screen and (max-width: 1070px) {
+  #main-footer .website-links-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #main-footer .partners-links-wrapper ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main-footer .website-links-wrapper {
+    display: block;
+  }
+  #main-footer .website-links-wrapper dl {
+    margin-bottom: 2rem;
+  }
+  #main-footer .partners-links-wrapper ul {
+    display: block;
+  }
+  #main-footer .partners-links-wrapper ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  #main-footer .partners-links-wrapper ul li img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #main-footer .website-links-wrapper dl dd a {
+    font-size: 0.9rem;
+  }
+}

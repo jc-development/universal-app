@@ -1,0 +1,255 @@
+#view-panel-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 6rem auto;
+  height: 82vh;
+}
+
+#view-panel-wrapper img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100% - 1rem);
+  justify-self: center;
+  align-self: center;
+}
+
+#view-panel-wrapper dl#view-panel {
+  padding: 1rem;
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 50%;
+  display: grid;
+  font-weight: 100;
+  grid-template-columns: 50% 50%;
+  height: 6vh;
+}
+
+#view-panel-wrapper dl#view-panel dt {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: left;
+  height: auto;
+}
+
+#view-panel-wrapper dl#view-panel dd:nth-of-type(1) {
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#view-panel-wrapper dl#view-panel dd:nth-of-type(2) {
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#view-panel-wrapper dl#view-panel dd button {
+  width: 100%;
+  font-size: 120%;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  min-height: 2rem;
+}
+
+#view-panel-wrapper dl#view-panel dd button.active {
+  border-radius: 0;
+}
+
+.bow-accessory span {
+  color: #337ab7;
+  opacity: 0.8;
+}
+
+.bow-accessory span:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  #view-panel-wrapper {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+  }
+  #view-panel-wrapper dl#view-panel {
+    width: calc(100% - 1rem);
+  }
+}
+
+/***  EDGE BROWSER FIX ***/
+@supports (-ms-ime-align:auto) {
+  #view-panel-wrapper img {
+    max-height: 82vh;
+  }
+}
+
+
+
+/*** NEW ***/
+#bow-view-panel {
+  position: relative;
+  z-index: 4;
+}
+
+
+/* build summary */
+#build-summary {
+  position: absolute;
+  /* top: 12%; */
+  /* background: #ccc; */
+  width: 28%;
+  left: 2rem;
+  min-width: 11rem;
+
+  top: 5rem;
+  height: 68vh;
+  overflow-y: auto;
+}
+
+#build-summary h6 {
+  font-size: 100%;
+}
+
+#build-summary p {
+  font-size: 70%;
+}
+
+#build-summary dl {
+  font-size: 70%;
+}
+
+#build-summary dl dt {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#build-summary dl dd {
+  padding-top: 0.25rem;
+}
+
+#build-summary::-webkit-scrollbar {
+  width: 1px;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+
+#build-summary::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#build-summary::-webkit-scrollbar-thumb {
+background-color: #337ab7;
+outline: 1px solid slategrey;
+}
+/* end build summary */
+
+
+@media screen and (max-width: 1023px) {
+  #view-panel-wrapper {
+    width: 40vw !important;
+    grid-template-rows: 3.5rem 2rem 60vh auto;
+  }
+  #view-panel-wrapper dl#view-panel {
+    padding: 0;
+    font-size: 80%;
+    height: auto;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    width: 60%;
+  }
+
+  .build-summary-btn {
+    display: block;
+    display: block;
+    height: 2rem;
+    margin: 0.5rem 1rem;
+    width: 60%;
+    font-size: 80%;
+    text-transform: uppercase;
+  }
+
+  #build-summary.mobile {
+    display: block;
+    position: absolute;
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 110px - 2rem);
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    overflow-y: auto;
+    font-size: 1.5rem;
+  }
+
+  #build-summary.mobile h5 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #build-summary.mobile .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    margin: 0;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    background: #337ab7;
+    border: none;
+    color: #ffffff;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+
+  #view-panel-wrapper .klarna-mobile-below-bow {
+    text-align: center;
+  }
+
+  #build-summary.mobile .klarna-heading-wrapper {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #view-panel-wrapper dl#view-panel, .build-summary-btn {
+    width: 80%;
+  }
+  #view-panel-wrapper dl#view-panel dd button {
+    min-height: 2.2rem;
+  }
+  #build-summary.mobile .klarna-heading-wrapper {
+    display: block;
+    margin: 0 0 0 1rem;
+  }
+  #build-summary.mobile .klarna-heading-wrapper #klarna-upstream-text {
+    font-size: 90% !important;
+  }
+  #build-summary h6 {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #view-panel-wrapper {
+    width: 35vw !important;
+    grid-template-rows: 4.5rem 2rem 50vh auto;
+    /* height: 62vh; */
+  }
+
+  #view-panel-wrapper #canvas-container{
+    height: 50vh;
+  }
+  
+  #view-panel-wrapper dl#view-panel {
+    width: 91%;
+    margin: 0.5rem 0.25rem 0rem 0.25rem;
+  }
+  .build-summary-btn {
+    width: 91%;
+    margin: 0rem 0.25rem 0rem 0.25rem;
+    min-height: 2.2rem;
+  }
+  #view-panel-wrapper dl dd button.active {
+    padding: 0.25rem 0;
+  }
+}

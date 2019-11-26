@@ -1,0 +1,62 @@
+#elite-klarna-financing {
+  text-align: center;
+}
+
+#elite-klarna-financing .hero-wrapper .hero-content {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#elite-klarna-financing .pay-plan-wrapper {
+  background-color: #eee;
+}
+
+#elite-klarna-financing .pay-plan-wrapper h4 {
+  text-transform: capitalize;
+}
+
+#elite-klarna-financing .pay-plan-wrapper .pay-plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+#elite-klarna-financing .pay-plan-wrapper .pay-plan p {
+  font-weight: bold;
+}
+
+#elite-klarna-financing .pay-plan-wrapper .pay-plan img {
+  max-width: 30%;
+  margin: 1rem auto;
+}
+
+#elite-klarna-financing .elite-finance-cta {
+  padding-top: 2rem;
+  display: block;
+}
+
+#elite-klarna-financing .elite-finance-cta img, #elite-klarna-financing .credit-apply img {
+  width: auto;
+}
+
+#elite-klarna-financing article {
+  padding: 3rem;
+}
+
+#elite-klarna-financing article:first-child {
+  padding: 0;
+}
+
+#elite-klarna-financing article h3 {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px) {
+  #elite-klarna-financing .credit-apply img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.section-content-leads {
+  padding: 0;
+}
+
+.section-content-leads article {
+  text-align: center;
+  width: calc(95% - 2rem);
+  padding: 4rem 1rem;
+  margin: 1rem auto;
+}
+
+.section-content-leads article img {
+  width: auto;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.section-content-leads article a {
+  margin: 1rem;
+  font-size: 130%;
+  font-weight: 600;
+  font-family: sans-serif;
+}

@@ -1,0 +1,23 @@
+.bow-filtering h5 {
+  margin: 0
+}
+
+.bow-filtering .form-group {
+  margin: 1rem;
+  text-align: left;
+  min-width: 10rem;
+  max-width: 10rem;
+  display: inline-block;
+}
+
+.bow-filtering .form-group label {
+  display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+  .bow-filtering .form-group {
+    max-width: 92%;
+    min-width: 92%;
+  }
+}

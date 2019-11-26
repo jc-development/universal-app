@@ -1,0 +1,262 @@
+
+.dealer-item {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.dealer-item:last-child {
+  border-bottom: none;
+}
+
+.dealer-name {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+.info-window {
+  text-align: center;
+  font-size: 1rem;
+}
+.info-window > p {
+  margin: 0.5rem;
+}
+
+/************ RITUAL 30 CHECKBOX ***************/
+#ritual-30-dealers {
+  padding: 0.5rem;
+  border-bottom: 1px solid;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  background-color: #000;
+}
+
+#ritual-30-dealers #ritual-30-available {
+  transform: scale(1.5);
+  padding: 0;
+  margin: 0;
+}
+
+#ritual-30-dealers span {
+  margin-left: 1rem;
+  vertical-align: bottom;
+}
+
+
+/******** NEW DEALER LOCATOR STYLNIG *********/
+.dealer-item .rit-30-dealer-icon, .dealer-item .rit-35-dealer-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+}
+
+.share-search {
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.share-search-modal-outer {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 5000;
+  background-color: rgba(200,200,200,0.7);
+}
+
+.share-search-modal-inner {
+  background-color: #fff;
+  padding: 2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 40rem;
+  max-width: 80%;
+  box-shadow: 1px 1px 0.5rem 0.1rem #999;
+  text-align: center;
+}
+
+.share-search-modal-inner p {
+  background: #efefef;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.share-search-modal-inner .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+/**** NEW FOR DECEMBER 17TH MAP REVAMP *****/
+
+#dealer-locator {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#dealer-locator #search-input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#dealer-locator #search-input #search-address {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #efefef;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#dealer-locator #search-input #search-address::placeholder {
+  color: #333;
+}
+
+#dealer-locator #search-input .search-button {
+  height: 3.5rem;
+  padding: 0 2rem;
+  background: #000;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+#map-content-wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#dealer-locator #map-content-wrapper .toggle-map-dealer-list {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 1rem 0rem #555;
+  min-width: 15rem;
+}
+
+#dealer-locator #map-content-wrapper .dealer-search-results {
+  position: absolute;
+  top: 5rem;
+  width: 30%;
+  height: calc(100% - 5rem);
+  background-color: #fff;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  box-shadow: 1px 1px 28px 1px #555;
+  min-width: 22rem;
+  text-align: center;
+  transform: translate3d(-104%,0,0);
+}
+
+#dealer-locator #map-content-wrapper .dealer-search-results h5 {
+  border-bottom: 1px solid #000;
+  margin-bottom: 0;
+}
+
+#dealer-locator #map-content-wrapper .dealer-search-results #dealer-list {
+  height: calc(100% - 2rem - 1px);
+  overflow-y: auto;
+  margin: 0;
+}
+
+#dealer-locator #map-content-wrapper .legend {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid;
+  z-index: 1
+}
+
+#dealer-locator #map-content-wrapper .legend div ~ div {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #efefef;
+}
+
+#dealer-locator #map-content-wrapper .legend img {
+  max-width: 3rem;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+#dealer-locator #map-content-wrapper .map-container #find-a-dealer-map {
+  position: relative;
+  height: 40rem;
+}
+
+#dealer-locator #map-content-wrapper .map-container #find-a-dealer-map .info-window button {
+  font-size: 70%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: -2px -1px 9px 5px #ccc;
+  margin: 0.5rem;
+}
+
+#dealer-locator #map-content-wrapper .dealer-search-results.desktop {
+  transform: translate3d(0,0,0);
+  height: 100%;
+  top: 0;
+}
+
+#dealer-locator #map-content-wrapper .dealer-search-results .dealer-item .bow-icons-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  #dealer-locator #map-content-wrapper .dealer-search-results.desktop {
+    min-width: 18rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #dealer-locator #map-content-wrapper .dealer-search-results {
+    width: 100%;
+  }
+  #dealer-locator #map-content-wrapper .legend {
+    top: unset;
+    bottom: 0.5rem;
+  }
+}

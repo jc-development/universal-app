@@ -1,0 +1,63 @@
+#bow-riser-color-variant-images {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+#bow-riser-color-variant-images > header h3 {
+  font-size: 200%;
+  margin-left: 0;
+}
+
+#bow-riser-color-variant-images dl {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+#bow-riser-color-variant-images dl dt {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 140%;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+#bow-riser-color-variant-images dl dd {
+  margin: 1rem 2rem;
+  max-width: 16rem;
+  text-align: center;
+  flex: 0 1 calc(25% - 4rem);
+}
+
+#bow-riser-color-variant-images img {
+  display: block;
+  margin: 0.15rem 0;
+  height: auto;
+  width: 100%;
+}
+
+#bow-riser-color-variant-images dl dd a {
+  color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  #bow-riser-color-variant-images dl dd {
+    flex-basis: calc(33.333% - 4rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bow-riser-color-variant-images dl dd {
+    margin: 1rem;
+    flex-basis: calc(33.333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #bow-riser-color-variant-images dl dd {
+    flex-basis: calc(50% - 2rem);
+    max-width: 11rem;
+  }
+}

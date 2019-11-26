@@ -1,0 +1,35 @@
+#about-cam {
+  background: #E7E6E7 /* video has different background color #C8C8C8 */;
+  color: #000;
+  display: grid;
+  /* grid-template-rows: 50% 50%; */
+  padding-bottom: 1rem;
+}
+
+#about-cam article {
+  width: 85%;
+  margin: 4rem auto 2rem auto;
+}
+
+#about-cam article header h2 {
+  font-size: 200%;
+}
+
+#about-cam video {
+  margin: auto;
+  width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  #about-cam article {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  #about-cam article p {
+    font-size: 160%;
+  }
+}

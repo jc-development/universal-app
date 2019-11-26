@@ -1,0 +1,12 @@
+.model-video-wrapper {
+  width: 72%;
+  height: auto;
+  margin: 3rem auto;
+  display: block;
+}
+
+@media screen and (max-width: 1023px) {
+  .model-video-wrapper {
+    width: 95%;
+  }
+}

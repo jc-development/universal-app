@@ -1,0 +1,79 @@
+.video-top-words-bottom {
+  display: grid;
+  grid-template-rows: 7fr auto;
+  grid-template-columns: 100%;
+  margin-bottom: 2rem;
+}
+
+.video-top-words-bottom div {
+  background: #000;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 66vh;
+}
+
+.video-top-words-bottom div video {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+  z-index: 0;
+}
+
+.video-top-words-bottom header {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding-bottom: 1rem;
+}
+
+.video-top-words-bottom header a {
+  color: #000;
+}
+
+.video-top-words-bottom header a:hover {
+  text-decoration: none;
+}
+
+#ritual-30-video-shield {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: auto;
+  z-index: 1;
+}
+
+.video-top-words-bottom div button {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  right: 25%;
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 769px) {
+  .video-top-words-bottom {
+    height: 90vh;
+  }
+  .video-top-words-bottom div {
+    height: 66vh;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .video-top-words-bottom div video {
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,35 @@
+#animated-fullscreen-video-wrapper {
+  background: #000;
+  position: fixed;
+  /* left: 0; */
+  /* width: 100vw; */
+  z-index: 3;
+}
+
+#animated-fullscreen-video-wrapper a {
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  z-index: 3;
+  color: #fff;
+  font-size: 160%;
+  border: 2px solid;
+  border-radius: 100%;
+  padding: 1rem 1.2rem;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+#animated-fullscreen-video-wrapper a:hover {
+  text-decoration: none;
+}
+
+#animated-fullscreen-video-wrapper a svg.svg-inline--fa.fa-times-circle.fa-w-16.icon-nav {
+  width: 5rem;
+  height: 5rem;
+}
+
+#animated-fullscreen-video-wrapper video {
+  width: 100%;
+  height: auto;
+}

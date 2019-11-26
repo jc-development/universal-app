@@ -1,0 +1,22 @@
+#bow-press-compatibility .bow-presses-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+#bow-press-compatibility .bow-press-title {
+  border-bottom: 1px solid;
+  text-align: left;
+}
+
+#bow-press-compatibility .bow-press-list {
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width:767px) {
+  #bow-press-compatibility .bow-presses-wrapper {
+    display: block;
+  }
+}

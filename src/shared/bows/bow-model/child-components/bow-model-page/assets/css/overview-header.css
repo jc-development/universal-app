@@ -1,0 +1,144 @@
+#bow-overview-header {
+  display: grid;
+  grid-template-columns: 100%;
+  /* grid-template-rows: 30% 70%; */
+  justify-items: center;
+}
+
+#bow-overview-header header {
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 1rem;
+}
+
+#bow-overview-header header h1 {
+  font-size: 300%;
+}
+
+#bow-overview-header header h2 {
+  font-size: 160%;
+  line-height: 1.1;
+}
+
+#bow-overview-header header h3 {
+  font-size: 130%;
+  font-weight: 400;
+  line-height: 1.4
+}
+
+#bow-overview-header header p {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+
+#bow-overview-header img {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 80vh;
+  width: auto;
+}
+
+#bow-overview-header ul {
+  display: grid;
+  grid-template-columns: calc(50% - 1rem);
+  /* grid-template-rows: 50% 50%; */
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-items: center;
+  width: calc(100% - 2rem);
+  background: #050505;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#bow-overview-header ul li {
+  font-size: 120%;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 0rem;
+  color: #fff;
+  text-align: center;
+}
+
+#bow-overview-header ul li:nth-of-type(3),
+#bow-overview-header ul li:nth-of-type(4) {
+  border-top: 2px solid;
+  padding-top: 2rem;
+}
+
+#bow-overview-header ul li:nth-of-type(1) {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#bow-overview-header ul li:nth-of-type(2) {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#bow-overview-header ul li:nth-of-type(3) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#bow-overview-header ul li:nth-of-type(4) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+
+#bow-overview-header header div.klarna img {
+  width: auto;
+  height: auto;
+}
+
+.camo-promo {
+  text-align: center;
+}
+
+.camo-promo .logo {
+  object-fit: contain;
+  padding: 1.5rem;
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  #bow-overview-header header h1 {
+    margin-top: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bow-overview-header header {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #bow-overview-header header h1 {
+    font-size: 450%;
+  }
+
+  #bow-overview-header header h2 {
+    font-size: 280%;
+  }
+
+  #bow-overview-header header p {
+    font-size: 160%;
+  }
+
+  #bow-overview-header ul li {
+    font-size:  170%;
+  }
+}

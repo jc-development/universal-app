@@ -1,0 +1,141 @@
+#finish-wrapper {
+  border-bottom: 1px solid #666;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.finish-layout div h3 {
+  font-size: 190%;
+}
+
+.finish-layout div h4 {
+  font-size: 150%;
+}
+
+.finish-layout div dl {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.finish-layout div dl:last-of-type {
+  border-bottom: transparent;
+}
+
+.swatch-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.finish-layout div dl dt {
+  text-transform: uppercase;
+  flex: none;
+  padding: 0 0 1rem 0;
+}
+
+.finish-layout div dl dd {
+  width: calc(25% - 0.4rem);
+  text-align: center;
+  padding: 6px 0.2rem 6px;
+}
+
+
+.finish-layout div dl dd.active {
+  width: calc(25% - 0.4rem - 6px);
+  padding: 3px 0.2rem 3px;
+}
+
+.finish-layout div dl dd span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 60%;
+  font-weight: 900;
+  padding-top: 0.2rem;
+}
+
+.finish-layout div dl dd img {
+  border-radius: 8px;
+  width: 4vw;
+}
+
+.camo-partner {
+  height: 8vh;
+  width: auto;
+}
+
+.rhinodize {
+  height: 3vh;
+  width: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .finish-layout div dl {
+    padding: 0.5rem 1rem;
+  }
+
+  .finish-layout div dl dd {
+    width: calc(13vw - 0.4rem);
+    text-align: center;
+    padding: 6px 0.2rem 6px;
+    margin: 0.3rem 0.2rem 0.5rem 0.2rem;
+  }
+  
+  .finish-layout div dl dd.active {
+    width: calc(13vw - 0.4rem - 6px);
+    padding: 3px 0.2rem 3px;
+  }
+
+  .finish-layout div dl dd img {
+    width: 6vw;
+  }
+  .finish-layout div dl dd span {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .finish-layout div h3 {
+    margin-top: 0;
+    font-size: 180%;
+  }
+
+  .finish-layout div h4 {
+    padding: 0.5rem;
+    margin: 0 0 0 1rem;
+  }
+  .finish-layout div dl {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  .finish-layout div dl dt {
+    padding: 0;
+  }
+  .finish-layout div dl dd {
+    width: calc(30% - 0.4rem);
+    text-align: center;
+    padding: 6px 0.2rem 6px;
+  }
+  
+  .finish-layout div dl dd.active {
+    width: calc(30% - 0.4rem - 6px);
+    padding: 3px 0.2rem 3px;
+  }
+  .finish-layout div dl dd img {
+    width: 10vw;
+  }
+  .camo-partner {
+    height: 6vh;
+    width: auto;
+  }
+  .rhinodize {
+    height: 2vh;
+    width: auto;
+  }
+  .finish-layout div dl dd span {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,87 @@
+#symbol-360 {
+    /* position: absolute;
+    left: 3rem;
+    top: 3rem;
+    width: 5rem; */
+
+  text-align: left;
+  position: absolute;
+  left: 2%;
+  top: 1rem;
+  width: 15%;
+}
+
+@media screen and (max-width: 480px) {
+  #symbol-360 {
+    left: 0;
+    top: 0.25rem;
+    width: 30%;
+    text-align: center;
+  }
+
+  #symbol-360 img {
+    width: 2.5rem;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  #symbol-360 figcaption {
+    background: transparent;
+    color: #000;
+    font-size: 0.75rem;
+    position: static;
+    padding: .5rem;
+    left: auto;
+    bottom: auto;
+    text-align: center
+  }
+}
+
+@media screen and (max-width: 923px) {
+  #hi-res-image {
+    width: auto !important;
+    margin-top: 0 !important;
+    height: 80vh !important;
+    left: 0 !important;
+    top: 7rem !important;
+    position: absolute !important;
+    background: #fff !important;
+    z-index: 2 !important;
+  }
+}
+
+#progress-loader {
+  background: #000 !important;
+  color: #fff !important;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 30%;
+}
+
+
+
+
+#hi-res-image {
+  width: auto;
+  margin-top: 0;
+  height: 100%;
+  left: 13%;
+  position: absolute;
+  background: #fff;
+  z-index: 2;
+}
+
+#visibility-hidden {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
+
+#symbol-360 img {
+  /* width: 70%;
+  margin-left: -4rem; */
+  width: 4rem;
+  margin-left: 0;
+  padding-top: 24.6666px;
+}

@@ -1,0 +1,22 @@
+.reusable-tech-spec-listing {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.reusable-tech-spec-listing header h3 {
+  font-size: 200%;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  margin-left: 0;
+}
+
+.reusable-tech-spec-listing p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  font-size: 120%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}

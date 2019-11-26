@@ -1,0 +1,107 @@
+#bows-list-compare .elite-logo {
+  max-width: 9rem;
+}
+
+#bows-list-compare .bow-lineup-title {
+  margin: 1rem 4rem;
+  border-bottom: 2px solid #000;
+}
+
+#bows-list-compare .bow-list-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  margin: 2rem 4rem;
+}
+
+#bows-list-compare .bow-list-row .bow-model-link {
+  text-decoration: none;
+  position: relative;
+}
+
+#bows-list-compare .bow-list-row .bow-image {
+  max-height: 32rem;
+  width: auto;
+}
+
+#bows-list-compare .bow-list-row .bow-name {
+  text-transform: uppercase;
+  font-size: 300%;
+  margin: 0;
+}
+
+#bows-list-compare .bow-list-row .bow-axle-axle, #bows-list-compare .bow-list-row .bow-speed-rating {
+  font-weight: bold;
+  margin-left: 0;
+}
+
+#bows-list-compare .bow-list-row .bow-axle-axle span, #bows-list-compare .bow-list-row .bow-speed-rating span {
+  font-weight: normal;
+}
+
+#bows-list-compare .bow-list-row .bow-use-type-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  grid-gap: 1rem;
+}
+
+#bows-list-compare .bow-list-row .bow-use-type-list  .bow-use-type-icon {
+  width: 100%;
+  height: auto;
+}
+
+#bows-list-compare .intro-content .purchase-online h2 {
+  margin: 1.5rem 0 0;
+  font-size: 2rem;
+}
+
+#bows-list-compare .intro-content .purchase-online p {
+  font-size: 1.2rem;
+}
+
+#bows-list-compare .intro-content .purchase-online dl dt {
+  font-weight: bold;
+}
+
+.shop-now {
+  border: 1px solid;
+  width: 30%;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #bows-list-compare .bow-list-row {
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #bows-list-compare .bow-lineup-title {
+    text-align: center;
+  }
+
+  #bows-list-compare .bow-list-row {
+    display: block;
+  }
+
+  #bows-list-compare .bow-list-row .bow-model-link {
+    padding-bottom: 4rem;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .purchase-online dl {
+    width: 73%;
+  }
+}

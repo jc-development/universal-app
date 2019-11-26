@@ -1,0 +1,31 @@
+.model-features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.model-features-wrapper .feature {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 1rem;
+}
+
+.model-features-wrapper .feature  .feature-title {
+  min-height: 8rem;
+  margin: 0;
+}
+
+.model-features-wrapper .feature .feature-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .model-features-wrapper {
+    display: block;
+  }
+  .model-features-wrapper .feature .feature-title {
+    min-height: 0;
+    margin: 1rem 0;
+  }
+}

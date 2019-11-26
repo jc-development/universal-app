@@ -1,0 +1,29 @@
+.bow-builder-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+/* #bow-config-panel {
+  overflow-y: auto;
+} */
+
+@media screen and (max-width: 1023px) {
+  .bow-builder-grid {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bow-builder-grid {
+    grid-template-columns: 35% 65%;
+  }
+}
+
+#buy-bow .active {
+  color: #000;
+  font-weight: 700;
+  border: 3px solid #337ab7;
+  border-radius: 5px !important;
+}

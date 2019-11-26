@@ -1,0 +1,33 @@
+export const FETCH_PRODUCT_RECOMMENDATIONS_REQUESTED = 'FETCH_PRODUCT_RECOMMENDATIONS_REQUESTED';
+export const FETCH_PRODUCT_RECOMMENDATIONS_SUCCEEDED = 'FETCH_PRODUCT_RECOMMENDATIONS_SUCCEEDED';
+export const FETCH_PRODUCT_RECOMMENDATIONS_FAILED = 'FETCH_PRODUCT_RECOMMENDATIONS_FAILED';
+
+export const CLEAR_PRODUCT_RECOMMENDATIONS_REQUESTED = 'CLEAR_PRODUCT_RECOMMENDATIONS_REQUESTED';
+export const CLEAR_PRODUCT_RECOMMENDATIONS_SUCCEEDED = 'CLEAR_PRODUCT_RECOMMENDATIONS_SUCCEEDED';
+export const CLEAR_PRODUCT_RECOMMENDATIONS_FAILED = 'CLEAR_PRODUCT_RECOMMENDATIONS_FAILED';
+
+// Product Recommendations action creators
+export const fetchProductRecommendations = (productId) => {
+  return {
+   type: FETCH_PRODUCT_RECOMMENDATIONS_REQUESTED,
+   productId
+  }
+};
+
+export const receiveProductRecommendations = (payload) => ({
+  type: FETCH_PRODUCT_RECOMMENDATIONS_SUCCEEDED,
+  payload
+});
+
+export const clearProductRecommendations = () => {
+  return {
+    type: CLEAR_PRODUCT_RECOMMENDATIONS_REQUESTED
+  };
+};
+
+export const ProductRecommendationsCleared = (payload) => {
+  return {
+    type: CLEAR_PRODUCT_RECOMMENDATIONS_SUCCEEDED,
+    payload
+  };
+}

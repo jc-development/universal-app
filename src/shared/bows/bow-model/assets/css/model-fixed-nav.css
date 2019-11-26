@@ -1,0 +1,41 @@
+.model-fixed-nav {
+  box-shadow: 0px 0px 20px 0px #666;
+  background: #f8f8f8 !important;
+  font-weight: bold;
+  width: 100%;
+  z-index: 5;
+}
+
+.model-fixed-nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-size: 1.1rem;
+}
+
+.model-fixed-nav ul li:first-of-type {
+  text-align: left;
+}
+
+.model-fixed-nav ul li:last-of-type {
+  text-align: right;
+}
+
+.model-fixed-nav ul li a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .model-fixed-nav ul {
+    display: block;
+  }
+  .model-fixed-nav ul li:first-of-type, .model-fixed-nav ul li:last-of-type {
+    text-align: center;
+    line-height: 2;
+  }
+}

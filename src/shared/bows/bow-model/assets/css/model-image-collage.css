@@ -1,0 +1,29 @@
+.image-collage-wrapper {
+  position: relative;
+  text-align: center;
+  width: 72%;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image-collage-wrapper .child-img-gallery-wrapper {
+  margin: auto;
+  padding: 0.25rem;
+}
+
+.image-collage-wrapper .child-img-gallery-wrapper .beauty-shot {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .image-collage-wrapper {
+    position: relative;
+    text-align: center;
+    width: 95%;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+.partners a {
+  display: inline-block;
+  padding: 5rem;
+  vertical-align: bottom;
+  width: 25%;
+}
+
+.partners a  > img {
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .partners a {
+    vertical-align: middle;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners a {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partners a {
+    padding: 3rem;
+    width: 50%;
+  }
+}

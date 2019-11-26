@@ -1,0 +1,129 @@
+.filter-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0vw;
+  background-color: transparent;
+  transition: background-color 0.5s ease,width 0s ease 0.5s;
+}
+
+.filter-menu {
+  background: rgb(255, 255, 255);
+  width: 16rem;
+  height: 100%;
+  padding: 0.5rem 0;
+  text-align: left;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  position: fixed;
+  left: calc(-16rem - 1px);
+  transition: left 0.75s ease;
+}
+
+.filter-menu h6 {
+  font-size: 1.3rem;
+  margin: 0 0 0.25rem;
+}
+
+.filter-menu ul li, .filter-menu ul li a{
+  cursor: pointer;
+  font-size: .925rem;
+  line-height: 1.45;
+  display: block;
+}
+
+.filter-menu .disabled-filter {
+  color: #ccc;
+}
+
+.filter-menu .active-filter {
+  position: relative;
+}
+
+.filter-menu .active-filter span {
+  position: absolute;
+  right: 0;
+  color: #000;
+  border: 1px solid;
+  padding: 0 0.25rem;
+  font-size: 0.9rem;
+}
+
+.show-filters, .close-filters {
+  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.show-filters .icon, .close-filters .icon {
+  margin-right: 0.5rem;
+}
+
+.close-filters {
+  text-align: right;
+  display: block;
+  width: calc(100% - 1rem);
+}
+
+.filter-wrapper.visible {
+  transition: width 0s, background-color 0.5s ease;
+  width: 100vw;
+  background-color: rgba(10,10,10,0.5);
+}
+
+.filter-wrapper.visible .filter-menu {
+  left: 0;
+}
+
+
+.filter-property {
+  /* border-bottom: 1px solid #ccc; */
+  margin: 1rem;
+}
+
+.filter-property h6 {
+  position: relative;
+}
+
+.filter-property h6 .icon-chevron-down {
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.filter-property ul {
+  margin: 0.5rem 0;
+}
+
+.selected-filter {
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.selected-filter .icon-remove-filter {
+  position: absolute;
+  top: -0.65rem;
+  right: -0.65rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.selected-filter + .selected-filter {
+  margin-left: 0.75rem;
+}
+
+@media screen and (max-width: 900px) {
+  .filter-menu {
+    width: 100%;
+    left: calc(-100% - 1px);
+  }
+
+  .filter-menu ul li, .filter-menu ul li a{
+    font-size: 1.1rem;
+  }
+}

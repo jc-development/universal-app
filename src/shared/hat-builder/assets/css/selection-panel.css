@@ -1,0 +1,10 @@
+#patch-selection-wrapper {
+  position: absolute;
+  width: 50%;
+  right: -1000px;
+  top: 20%;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}

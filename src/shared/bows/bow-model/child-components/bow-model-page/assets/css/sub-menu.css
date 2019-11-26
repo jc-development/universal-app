@@ -1,0 +1,97 @@
+#bow-sub-menu {
+  background: #f7f7f7;
+  display: flex;
+  width: 100%;
+
+  position: relative;
+  z-index: 3;
+}
+
+#bow-sub-menu h5 {
+  padding-left: 1.25vw;
+  font-size: 3vw;
+  width: 40vw;
+  align-self: center;
+}
+
+#bow-sub-menu nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+}
+
+#bow-sub-menu nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+#bow-sub-menu nav ul li {
+  align-self: center;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+#bow-sub-menu nav ul li a {
+  padding: 0 1rem;
+}
+
+#bow-sub-menu nav ul li a:focus {
+  text-decoration: none;
+}
+
+#bow-sub-menu nav ul li a:hover {
+  text-decoration: none;
+  padding: 3.5rem 1rem;
+  color: #fff;
+  background-color: #337ab7;
+}
+
+@media screen and (max-width: 1000px) {
+  #bow-sub-menu h5 {
+    width: 25vw;
+  }
+  #bow-sub-menu nav {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #bow-sub-menu {
+    display: block;
+  }
+
+  #bow-sub-menu h5 {
+    text-align: left;
+    font-size: 1.5rem;
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0;
+  }
+
+  #bow-sub-menu nav, #bow-sub-menu nav ul {
+    width: 100%;
+    margin: 0;
+  }
+
+  #bow-sub-menu nav, #bow-sub-menu nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  #bow-sub-menu nav {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #bow-sub-menu nav ul li a {
+    font-size: 1rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}

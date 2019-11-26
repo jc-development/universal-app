@@ -1,0 +1,656 @@
+#buy-online h2 {
+  font-size: 2rem;
+}
+
+#buy-online h4 {
+  font-size: 1.5rem;
+}
+/***** NEW ABOVE *****/
+
+#home {
+  /*margin: -24px 0 auto;*/
+  /* padding-top: 4rem; */
+  text-align: center;
+}
+
+#home .article {
+  height: 50rem;
+  position: relative;
+}
+#home .h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home .h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#home .p-left {
+  width: 40%;
+  text-align: left;
+  position: relative;
+  height: 522px; /* make a func to figure it out on the fly */
+}
+
+#home .absolute-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+
+#home .blue-color {
+  /*background: aliceblue;*/
+  padding: 3rem 0;
+}
+
+#home .clear {
+  clear: both;
+}
+
+#home .mid-width {
+  clear: both;
+  margin: 1rem auto;
+  padding: 2rem 0;
+  width: 85%;
+}
+
+
+
+#home .center-img {
+  margin: 0 auto;
+}
+
+.elite-pros div.row img {
+  margin: 0.5rem;
+}
+
+#buy-online {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 83vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1320px) {
+  #home .text-padding {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #home .text-padding {
+    padding: 0;
+  }
+
+  #home .absolute-middle {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #home .p-left {
+    width: 45%;
+  }
+}
+
+.elite-wins div {
+  min-height: 40rem;
+}
+
+.elite-wins div img {
+  /*border-radius: 100%;
+  height: 18rem;
+  width: 18rem;*/
+}
+
+.elite-wins div dl dt {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+/* CARD FLIPPING */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+
+.ritual {
+  background: #000; /* url('https://s3.amazonaws.com/elite-website/v2/images/bow-models/ritual/ritual-hero.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  height: 80vh;
+  position: relative;
+  clear: both;
+}
+
+#placeholder-start,
+#placeholder-end {
+  /* opacity: 0; */
+  position: absolute;
+  height: 100%;
+  width: auto;
+  z-index: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .enlist, .ritual {
+    background-position: 36% 0;
+  }
+}
+
+.enlist div, .ritual div {
+  position: absolute;
+  width: 44%;
+  left: 13%;
+  top: 45%;
+  transform: translate(-5%, -45%);
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  text-align: left;
+  z-index: 1;
+}
+
+.enlist div h2, .ritual div h2 {
+  font-size: 5rem;
+}
+
+.builder-slider-wrapper {
+  position: relative;
+}
+
+
+.legend button {
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  padding: 1rem;
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+}
+
+.builder-slider-wrapper .builder-slider {
+  width: 50% !important;
+  padding-top: 90px !important;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background: none !important;
+  opacity: 1 !important;
+  left: 3%!important;
+  margin-left: 0!important;
+  line-height: 1;
+  bottom: 13% !important;
+}
+
+@media screen and (max-width: 1150px) {
+  .builder-slider-wrapper .builder-slider {
+    width: 60% !important;
+  }
+  .builder-slider-wrapper .builder-slider h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .builder-slider-wrapper .builder-slider, .home-slider .legend {
+      width: 94% !important;
+      position: absolute !important;
+      transform: none!important;
+      margin: 1rem auto 0 !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .builder-slider-wrapper {
+    height: 32rem;
+    background-size: auto 100%;
+    background-position: center center
+  }
+  .builder-slider-wrapper > img{
+    display: none !important;
+  }
+}
+
+.option-impulse-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#home-option {
+  background: url('https://s3.amazonaws.com/elite-website/v2/images/option-home.jpg') center center no-repeat;
+  background-size: cover;
+  height: 30rem;
+  position: relative;
+}
+
+#home-impulse {
+  background: url('https://s3.amazonaws.com/elite-website/v2/images/impulse-home.jpg') right center no-repeat;
+  background-size: cover;
+  height: 30rem;
+  position: relative;
+}
+
+#home-impulse div, #home-option div {
+  color: #fff;
+  text-shadow: 0 3px 9px #000;
+  /*background: #ccc;*/
+  width: 50%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  text-align: left;
+}
+
+.legend p {
+  text-transform: uppercase !important;
+}
+
+#home-impulse div, #home-option div ul {
+  list-style-type: none;
+}
+
+#home-option div ul li, #home-impulse div ul li {
+  margin: 1rem auto;
+}
+
+#home-impulse div ul li a, #home-option div ul li a {
+  color: #fff;
+  border: 1px solid;
+  margin: 1rem 1rem 0 0;
+  padding: 1rem;
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 1060px)  {
+  #home-impulse div, #home-option div {
+    width: 66%;
+  }
+
+}
+
+@media screen and (max-width: 900px)  {
+
+  .option-impulse-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home-impulse {
+    background: url(https://s3.amazonaws.com/elite-website/v2/images/impulse-home.jpg) 77% center no-repeat;
+    background-size: cover;
+  }
+
+}
+
+
+.home-hero-video .video-js {
+  height: 100vh !important;
+}
+
+.home-hero-video .video-js .vjs-tech {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100vh !important;
+  transform: translate(-50%, 0);
+}
+
+#homeHeroVid {
+  width: 150%;
+  height: 100vh;
+}
+
+
+
+/*********** Home Hero Video **********/
+.home-hero-video {
+  background: url("https://s3.amazonaws.com/elite-website/v2/videos/home-vid-poster.jpg") !important;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  /*height: 70vh;*/
+}
+
+.home-hero-video-text {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.home-hero-video-text > h1{
+  text-shadow: 1px 1px 2px #222;
+  font-size: 7rem !important;
+}
+
+.home-hero-video-text > h2 {
+  text-shadow: 1px 1px 2px #222;
+  font-size: 3.5rem !important;
+}
+
+.home-hero-video a {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 2.5rem;
+  display: block;
+  width: 100%;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.home-hero-video a:hover, .home-hero-video a:focus {
+  color: #fff
+}
+
+#homeHeroVid {
+  width: 100%;
+  /*position: absolute;*/
+  /*left: 0;*/
+}
+
+.video-controls-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 60px;
+  color: #fff;
+}
+
+.video-controls-wrapper > p {
+  margin-bottom: 0;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px #222;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-hero-video-text {
+    transform: translate(-50%, 40px);
+  }
+  .home-hero-video-text > h1 {
+    font-size: 5rem !important;
+  }
+  .home-hero-video-text > h2 {
+    font-size: 3rem !important;
+  }
+  .home-hero-video a {
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media screen and (min-aspect-ratio: 8/5), screen and (min-aspect-ratio: 16/9) {
+  .home-hero-video {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-hero-video-text {
+    transform: translate(-50%, 30px);
+  }
+  .home-hero-video a {
+    transform: translate(-50%, 20%);
+  }
+  .video-controls-wrapper {
+    transform: translate(-50%,40px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #homeHeroVid {
+    width: 150%;
+  }
+  .home-hero-video-text {
+    transform: translate(-50%, 0px);
+  }
+  .home-hero-video-text > h1 {
+    font-size: 3.7rem !important;
+  }
+  .home-hero-video-text > h2 {
+    font-size: 2.5rem !important;
+  }
+  .home-hero-video a {
+    font-size: 2.2rem;
+    transform: translate(-50%,40px);
+  }
+}
+
+@media screen and (max-height: 500px) {
+    #textChange {
+      display: none;
+    }
+}
+
+
+/***************  Home Target Bows Teaser   ************/
+.target-teaser {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: -6rem;
+  background: #000;
+}
+
+.teaser-text {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.teaser-text > h2 {
+  font-size: 5rem;
+}
+
+.teaser-text > h3 {
+  font-size: 3rem;
+  padding: 1rem !important;
+}
+
+.teaser-img-wrapper {
+  width: 100%;
+}
+.teaser-img {
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+
+#new-bow-notifier label {
+  text-transform: uppercase;
+}
+
+#new-bow-notifier .form-group {
+  margin: 1rem auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 1380px) {
+  .teaser-text {
+    transform: translate(-50%, 10%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teaser-img-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #teaser {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .teaser-text {
+    transform: translate(-50%, 5%);
+  }
+}
+
+
+.hero-bg-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
+}
+
+/*************** ON-SALE SECTION FOR ARROWS *************/
+.sale-article {
+  padding: 3rem;
+}
+
+.sale-article h1 {
+  margin-top: 0;
+}
+
+.sale-article .on-sale {
+  padding: 0.2rem 1rem;
+  background: red;
+  color: #fff;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.sale-article .on-sale-image {
+  margin: 0 auto;
+}
+
+.sale-article .on-sale-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.sale-article .on-sale-content-wrapper > .on-sale-left-content {
+  width: 30%;
+}
+
+.sale-article .on-sale-content-wrapper > .on-sale-right-content {
+  width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  .sale-article {
+    padding: 2rem 1rem;
+  }
+  .sale-article h3 {
+    line-height: 1.5;
+  }
+  .sale-article .on-sale-content-wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .sale-article .on-sale-content-wrapper > .on-sale-left-content, .sale-article .on-sale-content-wrapper > .on-sale-right-content {
+    width: 100%;
+  }
+
+  .sale-article .on-sale-content-wrapper > .on-sale-left-content > img {
+    width: 80%;
+  }
+}
+
+
+
+.purchase-online dl {
+  text-align: left;
+  width: 28%;
+  margin: 1rem auto;
+}
+
+.home-accessories {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background: url("https://s3.amazonaws.com/elite-website/v2/images/home-slider/home-store-slider.jpg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.home-accessories header {
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 1rem;
+}
+
+.home-accessories header img {
+  width: 19%;
+  margin-left: 1rem;
+}
+
+header button {
+  color: #666;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-weight: 600;
+  border: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  font-size: 120%;
+  font-family: sans-serif;
+  text-shadow: none;
+}
