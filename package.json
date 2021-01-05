@@ -22,7 +22,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "@fortawesome/react-fontawesome": "0.0.17",
     "aws-sdk": "^2.229.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.23.0",
     "blob-to-base64": "^1.0.1",
